@@ -1,0 +1,17 @@
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:form>
+        <h:panelGrid columns="2">
+            Nome funcionario: <h:inputText value="#{gestorFuncionarioBean.funcionario.nome}"/>
+            Desligamento: <h:selectOneMenu value="#{gestorFuncionarioBean.tipoDesligamento}">
+                <f:selectItems value="#{gestorFuncionarioBean.tiposDesligamento()}"/>
+                            </h:selectOneMenu>
+           
+        </h:panelGrid>
+         <h:commandButton value="Cadastrar funcionario" action="#{gestorFuncionarioBean.cadastraFuncionario()}"/>
+         <h:commandButton value="Desligar funcionario" action="#{gestorFuncionarioBean.desligarFuncionario()}"/>
+    </h:form>
+</html>
+

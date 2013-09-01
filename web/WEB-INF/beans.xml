@@ -1,0 +1,12 @@
+<beans xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+		http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+	<alternatives>
+		<!--<class>br.com.casadocodigo.livrocdi.folhapagamento.CalculadoraDeSalariosPlano2005</class>-->
+                <!--<class>br.com.casadocodigo.livrocdi.folhapagamento.CalculadoraDeSalariosPlano2013</class>-->
+	</alternatives>
+        <interceptors>
+            <class>br.com.casadocodigo.livrocdi.interceptador.Auditor</class>
+        </interceptors>
+</beans>
